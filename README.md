@@ -47,4 +47,20 @@ Some provided examples:
 
 ![get data](./src/getdata.PNg)
 
+![des](./src/DES.png)
+
+### Python
+
+Python is an easy, general-purpose coding language designed with code readability through its notable use of significant indentation. As one of the high-level programming languages, it’s often used as an introductory language for college students and even universities would adopt the language for computer science courses. According to [Phillip Guo,](https://cacm.acm.org/blogs/blog-cacm/176450-python-is-now-the-most-popular-introductory-teaching-language-at-top-us-universities/fulltext) In July 2014, Python is the most popular language in the top-ranked U.S department with eight of the top 10 CS departments and 27 of the top 39 teach Python in introductory CS0 or CS1 course
+
+#### History
+
+Python is created in 1980s by Guido van Rossum in Netherland as a successor to ABC programming language. He is  the lead developer for the project until 12 July 2018 when he resigned. During that time , he was given the title "Benevolent Dictator For Life" due to his long term commitment as the project's chief.
+
+![Guido](./src/guido.jpg)
+
+The first release of Python was in 1991 as Python 0.9 and its other versions, Python2 and 3 was released in 2000 and 2008.
+
+![python 2 vs 3](./src/Python2_python3.jpg)
+
 ## Week 2 🥈
