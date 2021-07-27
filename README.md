@@ -21,9 +21,9 @@ While it is make up to 10% of our total course which can be consider small, the 
 pie
     title Pie Chart
     "Journal" : 10
-    "Project 1" : 20
-    "Project 2" : 25
-    "Project 3" : 45
+    "Milestone 1" : 20
+    "Milestone 2" : 25
+    "Milestone 3" : 45
  
 ```
 
@@ -41,7 +41,7 @@ The final requirements for the project:
 
 - each Data Explorer Screens accpect text input and mouse click and displays brief description of relate to information displayed
 
-- Accpect pointer input 
+- Accepct pointer input 
 
 Some provided examples:
 
@@ -61,6 +61,85 @@ Python is created in 1980s by Guido van Rossum in Netherland as a successor to A
 
 The first release of Python was in 1991 as Python 0.9 and its other versions, Python2 and 3 was released in 2000 and 2008.
 
+Python 2.0 came with many major features such as cycle detecting garbage collector and support Unicode. The Python 2.7's end-of-life date was initially set at 2015 then changed into 2020 out of concern that a large portion of existing code could not be forward-ported to Python 3.
+
+Python 3.0 came with a major revision of the language that is not completely backward-compatible.
+
 ![python 2 vs 3](./src/Python2_python3.jpg)
 
+### Setup Python (For Windows)
+
+Installing Python is pretty straight forward
+
+#### Step 1 Download Python
+
+The coding language is free like most other so just need to download from the origininal website. If you need to pay or go to external source to download Python, I don't know what to say.
+
+https://www.python.org/downloads/
+
+While the latest version is the best option, depend on your works, you can also get the Python 2 from the website.
+
+#### Optional
+
+You can also install Python on the Window Store which would help with terminal and path.
+
+![Window Store](./src/windowStore.jpg)
+
+#### Step 2 installing pip and fix Path
+
+This step could be extra if you following the install properly but in case pip just giving up on you or your PATH is broken here is some *personal* recommendations.
+
+###  Resource
+
+- Guo, Philip. “Python Is Now the Most Popular Introductory Teaching Language at Top ­U.S. ­Universities.” Accessed July 22, 2021. https://cacm.acm.org/blogs/blog-cacm/176450-python-is-now-the-most-popular-introductory-teaching-language-at-top-us-universities/fulltext.
+
+- “Python (Programming Language).” In *Wikipedia*, July 25, 2021. https://en.wikipedia.org/w/index.php?title=Python_(programming_language)&oldid=1035392450.
+
 ## Week 2 🥈
+
+*Under construction*
+
+### Data type
+
+Here is a table of the most popular data type in Python:
+
+| Data type | Mutability | Example and note                                             |
+| --------- | ---------- | ------------------------------------------------------------ |
+| `bool`    | immutable  | True, False <br/>The "T" and "F" need to be capitalize       |
+| `string`  | immutable  | "name"                                                       |
+| `dict`    | mutable    | {"key":1.9,3:False} <br/>The key value need to be immutable while the value can be both |
+| `int`     | immutable  | 42                                                           |
+| `complex` | immutable  | 3 + 2.7j<br />The j is the indicator for complex number      |
+| `list`    | mutable    | [4, "string",True]                                           |
+| `float`   | immutable  | 1.414                                                        |
+| `None`    | immutable  | None<br />similar to null in other language                  |
+| `range`   | immutable  | range(1,10)<br />A sequence of numbers using for looping     |
+| `set`     | mutable    | {4, 'string',true}set()<br />unorderd, contain no duiplicates |
+| `tuple`   | immutable  | (4,'string',True)                                            |
+| `bytes`   | immutable  | bytes([119,105,107,105])                                     |
+
+### Exercise - Fizzbuzz
+
+Given the maximum number, if
+
+#### version 1
+
+
+
+#### version 2
+
+
+
+#### version 3
+
+
+
+#### Revision
+
+The excersise helps me visualise the process to build a program from the inital requirements while also poiting out how to improve the resuablity as well as function wise.
+
+### Control flow
+
+
+
+### Resource
