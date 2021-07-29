@@ -27,7 +27,9 @@ pie
  
 ```
 
-### Project 
+### Project
+
+#### Overview
 
 Making up of 90% of the course, the project would be my main focus especial the first and second milestone as it is the foundation of my project and will contribute the to final product.
 
@@ -48,6 +50,19 @@ Some provided examples:
 ![get data](./src/getdata.PNg)
 
 ![des](./src/DES.png)
+
+# Project Overview
+
+For SDV602 2021 Project, I would like to use White shark tagging off new Zealand between April 2005 and September 2009 database
+
+https://catalogue.data.govt.nz/dataset/white-shark-tagging-off-new-zealand-between-april-2005-and-september-20091
+ The database would be useful to show to location of white shark sighting in New Zealand especially those hotspot where shark would appear frequently as well as tracking individual shark. At the moment the main source of data is from profession institution who actively research for the specie. 
+
+The data base got the latitude and longitude of the sighting which could be presenting on map and divided into region or producing hotspot. 
+
+The time stamp is also available in year like 2004, 2005... which can be useful to compare the changes between year. The data base also included description such as male, female, immature, adult as well as the length which could be added to DES when input new data.
+
+The project could be develop to further tracking shark sighting  and other species of shark around New Zealand.
 
 ### Python
 
@@ -87,7 +102,56 @@ You can also install Python on the Window Store which would help with terminal a
 
 #### Step 2 installing pip and fix Path
 
-This step could be extra if you following the install properly but in case pip just giving up on you or your PATH is broken here is some *personal* recommendations.
+This step could be extra if you following the install properly but in case pip just giving up on you or your PATH is broken here is some *personal* recommendations or fix I found.
+
+##### The best option
+
+The universal way to fix everything in technology world, re-install Python and also remember to tick the option to install PATH for you.
+
+![tick that Path](https://docs.blender.org/manual/en/latest/_images/about_contribute_install_windows_installer.png)
+
+##### Adding PATH when python cannot be located
+
+- Add path for using Python in Bash
+
+```bash
+$ PATH=$PATH:/c/Python39/Scripts
+$ PATH=$PATH:/c/Python39 (I store the Python in C:/)
+```
+* Note this is the temperary solution which suitable for virtual enviroment or one-time use code as the PATH will reset as soon as you terminate the code editor.
+
+##### Install pip the hard way
+
+download get-pip.py over [here](https://pip.pypa.io/en/stable/installation/#get-pip-py)
+
+or here is the script for [get-pip.py](https://bootstrap.pypa.io/get-pip.py)
+
+Then run 
+
+```bash
+$ python get-pip.py
+```
+
+##### Creating virtual enviroment
+
+- install venv
+  
+  ```bash
+  py -m pip install --user virtualenv
+  ```
+  
+- inital venv
+  
+  ```bash
+  py -m venv env
+  ```
+  
+  env is the location to create virtual enviroment => this will      create in the project and call env
+
+- deactive venv
+  ```python
+  deactive
+  ```
 
 ###  Resource
 
@@ -118,9 +182,17 @@ Here is a table of the most popular data type in Python:
 | `tuple`   | immutable  | (4,'string',True)                                            |
 | `bytes`   | immutable  | bytes([119,105,107,105])                                     |
 
+### Boolean Operations
+
+| Operation | Notes                                                        | In Javascript |
+| --------- | ------------------------------------------------------------ | ------------- |
+| `x and y` | The code will evaluates the `y` only if `x` is true. Some example<br /> `true and true == true ` <br /> `false and false ==false` <br /> `true and false ==false` | x && y        |
+| `x or y`  | Opposite with `and` , `y` will be evaluated only if `x` is fail <br /> `true or true ==true` <br /> `false or true == true` <br /> `false or false == false` | x \|\| y      |
+| `not x`   | while also boolean, `not` has a lower priority than non-Boolean operators so<br /> `not a==b`, `a==b` would be evaluated first before `not` which can be interpret as <br /> `not (a==b)` | !x            |
+
 ### Exercise - Fizzbuzz
 
-Given the maximum number, if
+Given the maximum number or in this case `up_to`, for each number from 0 to `up_to` is the number is 
 
 #### version 1
 
@@ -143,3 +215,4 @@ The excersise helps me visualise the process to build a program from the inital 
 
 
 ### Resource
+
