@@ -1,5 +1,9 @@
 # SDV602-Journal
 
+Student name : Quang Thanh Dao
+
+Student ID : 13508159
+
 The document will be update weekly and capture my experience as well as knowledge I learnt.
 
 ## Week 1 🥇
@@ -29,7 +33,7 @@ pie
 
 ### Project
 
-#### Overview
+#### Summary
 
 Making up of 90% of the course, the project would be my main focus especial the first and second milestone as it is the foundation of my project and will contribute the to final product.
 
@@ -74,6 +78,8 @@ Python is created in 1980s by Guido van Rossum in Netherland as a successor to A
 
 ![Guido](./src/guido.jpg)
 
+Source Google
+
 The first release of Python was in 1991 as Python 0.9 and its other versions, Python2 and 3 was released in 2000 and 2008.
 
 Python 2.0 came with many major features such as cycle detecting garbage collector and support Unicode. The Python 2.7's end-of-life date was initially set at 2015 then changed into 2020 out of concern that a large portion of existing code could not be forward-ported to Python 3.
@@ -81,6 +87,8 @@ Python 2.0 came with many major features such as cycle detecting garbage collect
 Python 3.0 came with a major revision of the language that is not completely backward-compatible.
 
 ![python 2 vs 3](./src/Python2_python3.jpg)
+
+Source google
 
 ### Setup Python (For Windows)
 
@@ -96,7 +104,7 @@ While the latest version is the best option, depend on your works, you can also 
 
 #### Optional
 
-You can also install Python on the Window Store which would help with terminal and path.
+You can also install Python on the Window Store which would help with terminal and path. This is my screenshot of Python 3.7 on Microsoft store
 
 ![Window Store](./src/windowStore.jpg)
 
@@ -106,11 +114,13 @@ This step could be extra if you following the install properly but in case pip j
 
 ##### The best option
 
-The universal way to fix everything in technology world, re-install Python and also remember to tick the option to install PATH for you.
+The universal way to fix everything in technology world, re-install Python and also remember to tick the option to install PATH for you. From my experience, I tried all the solutions ( some of them work ) below but in the end, I still end up re-install my Python anyway.
 
 ![tick that Path](https://docs.blender.org/manual/en/latest/_images/about_contribute_install_windows_installer.png)
 
-##### Adding PATH when python cannot be located
+<p style="margin: auto; padding: 0;">Source google</p>
+
+##### Add PATH when python cannot be located
 
 - Add path for using Python in Bash
 
@@ -153,7 +163,7 @@ $ python get-pip.py
   deactive
   ```
 
-###  Resource
+###  Reference
 
 - Guo, Philip. “Python Is Now the Most Popular Introductory Teaching Language at Top ­U.S. ­Universities.” Accessed July 22, 2021. https://cacm.acm.org/blogs/blog-cacm/176450-python-is-now-the-most-popular-introductory-teaching-language-at-top-us-universities/fulltext.
 
@@ -161,17 +171,15 @@ $ python get-pip.py
 
 ## Week 2 🥈
 
-*Under construction*
-
 ### Data type
 
-Here is a table of the most popular data type in Python:
+With some revision from [W3 school](https://www.w3schools.com/python/python_datatypes.asp), here is a table of the most popular data type in Python:
 
 | Data type | Mutability | Example and note                                             |
 | --------- | ---------- | ------------------------------------------------------------ |
 | `bool`    | immutable  | True, False <br/>The "T" and "F" need to be capitalize       |
 | `string`  | immutable  | "name"                                                       |
-| `dict`    | mutable    | {"key":1.9,3:False} <br/>The key value need to be immutable while the value can be both |
+| `dict`    | mutable    | {"key":1.9,3:False} <br/>The key value need to be immutable data type while the value can be both |
 | `int`     | immutable  | 42                                                           |
 | `complex` | immutable  | 3 + 2.7j<br />The j is the indicator for complex number      |
 | `list`    | mutable    | [4, "string",True]                                           |
@@ -184,35 +192,155 @@ Here is a table of the most popular data type in Python:
 
 ### Boolean Operations
 
-| Operation | Notes                                                        | In Javascript |
+| Operation | Notes                                                        | In JavaScript |
 | --------- | ------------------------------------------------------------ | ------------- |
 | `x and y` | The code will evaluates the `y` only if `x` is true. Some example<br /> `true and true == true ` <br /> `false and false ==false` <br /> `true and false ==false` | x && y        |
 | `x or y`  | Opposite with `and` , `y` will be evaluated only if `x` is fail <br /> `true or true ==true` <br /> `false or true == true` <br /> `false or false == false` | x \|\| y      |
-| `not x`   | while also boolean, `not` has a lower priority than non-Boolean operators so<br /> `not a==b`, `a==b` would be evaluated first before `not` which can be interpret as <br /> `not (a==b)` | !x            |
+| `not x`   | while also Boolean, `not` has a lower priority than non-Boolean operators so<br /> `not a==b`, `a==b` would be evaluated first before `not` which can be interpret as <br /> `not (a==b)` | !x            |
 
-### Exercise - Fizzbuzz
+Basec on [W3 school](https://www.w3schools.com/python/python_operators.asp) 
 
-Given the maximum number or in this case `up_to`, for each number from 0 to `up_to` is the number is 
+### Exercise - Fizz buzz
 
-#### version 1
+Given the maximum number or in this case `up_to`, for each number from 0 to `up_to` is the number is final number.
 
+#### My solution
 
+```python
+def fizz_buzz(fizz=3,buzz=5,up_to=15):
+    x = 0;
+    result =[]
+    while x in range(up_to+1):
+      string = ""
+      if x%fizz==0 and x != 0:
+        string += "Fizz"
+      if x%buzz==0 and x !=0:
+        string += "Buzz"
+      result.append((x,(str(x) if string == "" else string)))
+      x+=1
+    for i in result:
+      print(f'{i[0]} , {i[1]}')
+  
+fizz_buzz(3, 5, 45)
+```
 
-#### version 2
+### Exercise - print sum , multiply result of table in csv
 
+After recieved the data from csv file and convert into table, We need to calculate the sum of the column and the multiply value of the row
 
+### My unfinished solution
 
-#### version 3
+```python
+"""
+Scans a csv file redirected into the script
+ "--header" indicates the first row is a header row
+"""
+import sys as sys #standard system library
+import argparse # parse the auto-generated
+
+def scan(has_header=False): # False is the default value
+    result = []     #store the result
+    values = []
+    do_header = has_header
+    header_names = {}
+    try: #standard practice to try and catch for data type
+        for aline in sys.stdin: #get one line at a time
+                this_line = aline.strip().split(',') # putting item seperated by comma in a list
+                if do_header:
+                    header_names = this_line
+                    do_header = False
+                else:
+                    a_dict = {}
+                    for i in range(0,len(this_line)): #loop through each line
+                        if has_header :
+                            a_dict[header_names[i]]= this_line[i]
+                        else:
+                            a_dict[i]= this_line[i]
+
+                    result += [a_dict] #add row to result
+                    values += [this_line]
+    except:
+        print("Unexpected error:", sys.exc_info()[0])
+        return result,values
+
+    return result,values
+
+# Exercise one
+def sum_of( a_list_of_dictionary,column_names=2):
+    """
+    Return one value that is the sum of the column 
+    column_name of each "row" (dictionary)
+    """
+    # Get a header line
+    result = 0
+    for a_dictionary in a_list_of_dictionary:
+        for key,value in a_dictionary.items():
+            if key == column_names:
+                result += int(value)
+    print(f'Sum value of column {column_names} is {result}')
+    
+
+#Exercise Two
+def multiple_cols(a_list_of_dictionary,column_names=1):
+    """
+    Return a new list of "rows" (dictionary)
+    That multiples the values of the named columns
+    """
+    result = 1
+    a_dictionary = a_list_of_dictionary[column_names]
+    for key,value in a_dictionary.items():
+        if key != 0 and value != 0:
+            result*=int(value)
+    print(f'Muliple value of row {column_names+1} is {result}')
+
+#Exercise Three
+# - fix display_table so that the columns all line up
+def display_table(a_list_of_dictionary):
+    lines = ""
+    # Get a header line
+    a_dictionary = a_list_of_dictionary[0]
+    header_line = ""
+    
+    for key in a_dictionary:
+        header_line += f'{key}\t'
+    header_line = header_line.strip()
+
+    # Make up the table
+    lines += header_line 
+
+    for a_dictionary in a_list_of_dictionary:
+        a_line = ''
+        for key,value in a_dictionary.items():
+            a_line += f'{value}\t'
+        a_line = a_line.strip()
+        lines += f'\n{a_line}'
+    print(lines)
+
+if __name__ == "__main__": # this code run first
+    parser = argparse.ArgumentParser(description="Scan some rows into a list of one list per line.") # build argument parse
+    parser.add_argument('--header',action='store_true',help='The first row is a header row.')
+    args = vars(parser.parse_args()) # check all the argument
+    print(f'The args are {args}')#check all the augent
+    #args = sys.argv 
+    #print(f'The args are {args}')
+    dict_lst,values_lst = scan(args['header']) #scan argument for header to get true and false value
+    display_table(dict_lst)
+    sum_of(dict_lst,4)
+    multiple_cols(dict_lst,0)
+
+```
 
 
 
 #### Revision
 
-The excersise helps me visualise the process to build a program from the inital requirements while also poiting out how to improve the resuablity as well as function wise.
+Although `for` loop would be more common to in the programming language, I was ask to use `while` which not only refresh my memory but also understand the 2 loop functions in JavaScript. In my point of view, their application and structure is very similar with both language especially while loop with range of loop, condition statement as well as end with increment. The same could be apply with `for` loop  but not entirely. While in JavaScript, `for` loop require 3 statement to statement the index, maximum value and increment, Python `for` loop is iterate type which for each elements in list, dictionary or range would lead to one execution and you could control the loop to break or continue after the condition
 
-### Control flow
+The exercise Fizz Buzz helps me visualise the process to build a program from the initial requirements while also pointing out how to improve the reusability as well as functionality of the application. Furthermore, when comparing with the tutor final solution, my understanding of functions and how to expand and improve the reusability of the function.
 
+Furthermore, the second exercise allow me to experience first hand the how to manipulate the data from external source which is something will happen all the time in my future career.
 
+### Refrence
 
-### Resource
-
+- “Python Data Types.” Accessed July 31, 2021. https://www.w3schools.com/python/python_datatypes.asp.
+- “Python Operators.” Accessed July 31, 2021. https://www.w3schools.com/python/python_operators.asp.
