@@ -198,7 +198,7 @@ With some revision from [W3 school](https://www.w3schools.com/python/python_data
 | `x or y`  | Opposite with `and` , `y` will be evaluated only if `x` is fail <br /> `true or true ==true` <br /> `false or true == true` <br /> `false or false == false` | x \|\| y      |
 | `not x`   | while also Boolean, `not` has a lower priority than non-Boolean operators so<br /> `not a==b`, `a==b` would be evaluated first before `not` which can be interpret as <br /> `not (a==b)` | !x            |
 
-Basec on [W3 school](https://www.w3schools.com/python/python_operators.asp) 
+Base on [W3 school](https://www.w3schools.com/python/python_operators.asp) 
 
 ### Exercise - Fizz buzz
 
@@ -343,4 +343,137 @@ Furthermore, the second exercise allow me to experience first hand the how to ma
 ### Refrence
 
 - “Python Data Types.” Accessed July 31, 2021. https://www.w3schools.com/python/python_datatypes.asp.
+
 - “Python Operators.” Accessed July 31, 2021. https://www.w3schools.com/python/python_operators.asp.
+
+  
+
+## Week 3 :3rd_place_medal: Python Data structure
+
+Data structure is how data organised, managed and stored in an efficient and simple way. It would allows users or programers to store collection of data, organise and perform operations on them.
+
+According to [Akash](https://www.edureka.co/blog/data-structures-in-python/), python allows user to create their own data structures enabling them to have full control over their functionality. Some user-defined data structures available in python are:
+
+- Stack
+- Tree
+- Queue
+- Graph
+- Linked List
+- HashMap
+
+### String 
+
+String is immutable but if treated as list 
+
+### Range
+
+`range(start,end,skip)` is an list of number from the `start` number continue to `end` number in logical order. The order can be decreasing or increasing depend on the `start` and `end` value as well as `skip` value which indicate the space between each value in that range
+
+### Tuple
+
+#### Description
+
+Tuples are the same as lists are the exception that the data once entered into the tuple cannot be changed except for the mutable data in the tuple.
+
+#### Using Tuple
+
+```python
+tuple = (1,2,3)+(['hindi','piction'])
+print(tuple) #(1,2,3,['hindi','piction'])
+tuple[3][1]='Nelson'
+print(tuple) #(1,2,3,['hindi','Nelson'])
+```
+
+### Set 
+
+#### Description
+
+Set is a collection of unordered elements that are unique. So  changing the data from other collection into set can remove the duplicate data. The operations for set is the same as the arithmetic sets.
+
+There is no same element within a set which would be useful to create a list of unique value
+
+#### Operations
+
+```python
+set1 = {1,2,3,4,5}
+set2 = {2,3,4,5,6}
+set1.union(set2)
+set1 | set2
+set1.intersection(set2)
+set1 & set2
+set1.difference(set2)
+set1 - set2
+set1.symmetric_difference(set2)
+set1 ^ set2
+```
+
+### List :book:
+
+#### Description
+
+List is mutable
+
+List is used different data types in a sequential manner through the assigned addresses of each element in the list, called Index. The index start from 0 and go on until the last element are called positive index while negative index would start from the last element as -1 until it reaches the 0.
+
+#### Working with List
+
+1. Creating list
+   `theList = [1,2,3,4,13,2,1]`
+
+2. Accessing elements
+   ```print(theList[2]) # 3```
+
+3. Checking the length of list
+   `len(theList) # 7`
+
+4. sorting the value in list
+
+   `sorted(theList) #small to big`
+
+   `theList.sort(reverse=True)# big to small`
+
+### Dictionary :couple:
+
+Dictionary is mutable
+
+Dictionaries are used to store key-value pairs which is similar with object in JavaScript. It is important to note that key needed to be an immutable data type while value can be both immutable or mutable which allow the data to be store in both horizontal and vertical manner. as dictionary and list could be nested in another list or dictionary.
+
+#### Working with dictionary
+
+1. Creating list
+   `theList = [1,2,3,4,13,2,1]`
+
+2. Accessing elements
+   ```print(theList[2]) # 3```
+
+3. Checking the length of list
+   `len(theList) # 7`
+
+4. sorting the value in list
+
+   `sorted(theList) #small to big`
+
+   `theList.sort(reverse=True)# big to small`
+   
+### Making game 
+
+I go through an exercise which require to created a game without using loop.
+
+### Reference:
+
+- Edureka. “Data Structures in Python | List, Tuple, Dict, Sets, Stack, Queue,” October 10, 2019. https://www.edureka.co/blog/data-structures-in-python/.
+
+## Week 4 :four:
+
+  
+
+
+
+
+
+
+
+
+
+
+
