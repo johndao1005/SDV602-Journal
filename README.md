@@ -363,7 +363,16 @@ According to [Akash](https://www.edureka.co/blog/data-structures-in-python/), py
 
 ### String 
 
-String is immutable but if treated as list 
+String is immutable which mean string data could not be changed once they have been assigned. In order to change the value of the string, we either can change the value of the string as a whole or the whole string. On another hand, we can use list index and range value to extract from list
+
+Example:
+
+```python
+string='0123456'
+print(string[0:2]) #'012'
+```
+
+
 
 ### Range
 
