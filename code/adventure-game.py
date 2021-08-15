@@ -66,10 +66,10 @@ def lighthouseRoom():
                     lighthouseRoom()
                 elif secondchoice == "n":
                     print("Waking up in your room feeling unreal but relieved. Suddenly, you Feel tired and want to go back to sleep.\n\
-                    Would you sleep again my little Lamb?")
+                    Would you sleep again?")
                     lighthouseRoom() if input("\ndo you want to restart? Y or N\n") == 'y' else False
     else:
-        print("The Monster is inside you and you are the monster, You will keep hunting till you die or save yourself")
+        print("The Monster is inside you and you are the monster, You will keep hunting yourself till you die")
         return False
 if __name__ == '__main__':
     lighthouseRoom()

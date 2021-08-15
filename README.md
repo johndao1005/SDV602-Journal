@@ -372,8 +372,6 @@ string='0123456'
 print(string[0:2]) #'012'
 ```
 
-
-
 ### Range
 
 `range(start,end,skip)` is an list of number from the `start` number continue to `end` number in logical order. The order can be decreasing or increasing depend on the `start` and `end` value as well as `skip` value which indicate the space between each value in that range
@@ -472,7 +470,19 @@ I go through an exercise which require to created a game without using loop.
 
 - Edureka. “Data Structures in Python | List, Tuple, Dict, Sets, Stack, Queue,” October 10, 2019. https://www.edureka.co/blog/data-structures-in-python/.
 
+
+
 ## Week 4 :four:
+
+### Python Simple GUI
+
+
+
+### Purpose of GUI
+
+
+
+### Reference
 
   
 
