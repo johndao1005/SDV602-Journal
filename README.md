@@ -484,7 +484,98 @@ I go through an exercise which require to created a game without using loop.
 
 ### Reference
 
-  
+- 
+
+
+
+
+
+## Week 5 :five:
+
+### What I Learnt
+
+#### *args
+
+According to geeksforfeeks.org, the special syntax *args in function used to pass a variable number of arguments to a function 
+
+- the symbol * allow the function to take a variable number of arguments and *args allows function to take in more arguments than the number of formal arguments which is previously defined.
+- The syntax allow any number of extra arguments can be tacked on to your current formal parameters even the case of zero arguments.
+- Using *, the variable that we associate with the * become iterable so developer can iterate over it or run some higher-order function such as map, filter ,etc.
+
+```python
+def myFun(*argv):
+    for arg in argv:
+        print (arg)
+   
+myFun('Hello', 'Welcome', 'to', 'GeeksforGeeks')
+```
+
+#### **kwargs (key word argument)
+
+The special syntax **kwargs in function definition used to pass a keyworded, variable-length argument list according to geeksforgeeks.org. The name kwargs with the double star allows developer to pass through keyword arguments (and any number of them)
+
+- While also allow users to iterate over the value, there is no order of kwargs when processing the data. This behaviour is identical with dictionary would allow the faster search for larger input as it searches with key word instead of linear search
+- the key word argument is the name of the variable as it is pass into the function
+
+```python
+def histogram(**kwargs):
+    """
+    An example of a histogram
+    Uses numpy as np to get a list of values in a random range - Gaussian
+
+    Args 
+          **kwargs lets you pass arguments into this function
+
+          This includes an example of how to change the plt 'title' by looking for it in **kwargs.
+    """
+    if kwargs['title']:
+           plt.title(kwargs['title'])
+    else:
+           plt.title("Gaussian Histogram")
+
+    gaussian_numbers = np.random.normal(size=10000)
+    
+    plt.hist(gaussian_numbers, bins=20)
+    if kwargs['value']:
+           plt.xlabel(kwargs['value'])
+    else:
+           plt.xlabel("Value")
+    
+    plt.ylabel("Frequency")
+    #plt.show()
+    return plt.gcf()
+
+def show_figFunc(pFigureFunction, **kwargs):
+    """
+    Shows a figure
+
+    args
+        pFigureFunction (a function that returns a matplotlib figure)\n
+        **kwargs needs to match kwargs of the function
+    """
+    current_fig = fig_with_kwargs(pFigureFunction,**kwargs)
+    plt.figure(current_fig.number)
+    plt.show()
+
+if __name__ == "__main__":
+    show_figFunc(histogram, title="Our Name for Title", value = "X label")
+```
+
+The code above show with the used of **kwargs, coder can adding more arguments to make the program more specific while also keeping the default value for certain of the function. Furthermore,  due to the dictionary-like behaviour, additional function or data value can be added as long as the function can handle the input from users.
+
+### What I can apply
+
+**kwargs allow input additional argument with come with keyword , I can apply this characteristic to create a general function to support window creation as well as additional details for customisation such as width, height or title while keeping the amount of code to minimum while expand the functionality.
+
+**args on another hand would be useful for processing raw data from csv or other database file which didn't specific the how many data entry is given. Moreover, the syntax can be used to transfer the data list for plotting the data with Matplotlib.
+
+### Reference
+
+- GeeksforGeeks. “*args and **kwargs in Python,” May 30, 2017. https://www.geeksforgeeks.org/args-kwargs-python/.
+
+
+
+
 
 
 
