@@ -476,21 +476,33 @@ I go through an exercise which require to created a game without using loop.
 
 ### Python Simple GUI
 
+Today we learn about PySimpleGUI, which helps us create simple application including the layout such as title, font, button and label. Those layout would allow users to interact with python without the need to learn about coding.
 
+One example is by using the backbone of the game from our previous class, using PySimpleGUI I was able to create window to showing the instruction instead of using the console to print the message and instruction.
 
 ### Purpose of GUI
 
+With GUI or graphical user interface, user can interact through icon, buttons and message instead of typing command labels, creating and invoking function.
 
+Some Standard UI widget:
+
+- menu
+- button
+- radio buttons
+- text entry and field
+- file browser
 
 ### Reference
 
-- 
-
-
+- “Graphical User Interface.” In *Wikipedia*, August 26, 2021. https://en.wikipedia.org/w/index.php?title=Graphical_user_interface&oldid=1040746579.
 
 
 
 ## Week 5 :five:
+
+
+
+## Week 6 :six:
 
 ### What I Learnt
 
@@ -574,6 +586,8 @@ The code above show with the used of **kwargs, coder can adding more arguments t
 - GeeksforGeeks. “*args and **kwargs in Python,” May 30, 2017. https://www.geeksforgeeks.org/args-kwargs-python/.
 
 
+
+## Week 6
 
 
 
