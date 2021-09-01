@@ -476,6 +476,8 @@ I go through an exercise which require to created a game without using loop.
 
 ### Python Simple GUI
 
+![pysimpleGUI](https://files.realpython.com/media/Get-Started-with-PySimpleGUI_Watermarked.a54f8fd0b42e.jpg)
+
 Today we learn about PySimpleGUI, which helps us create simple application including the layout such as title, font, button and label. Those layout would allow users to interact with python without the need to learn about coding.
 
 One example is by using the backbone of the game from our previous class, using PySimpleGUI I was able to create window to showing the instruction instead of using the console to print the message and instruction.
@@ -492,6 +494,12 @@ Some Standard UI widget:
 - text entry and field
 - file browser
 
+### Screenshot
+
+![menu example](C:\Users\johnd\workspace\SDV602-Journal\src\menu example)
+
+![image-20210901135059032](C:\Users\johnd\workspace\SDV602-Journal\src\student debt)
+
 ### Reference
 
 - “Graphical User Interface.” In *Wikipedia*, August 26, 2021. https://en.wikipedia.org/w/index.php?title=Graphical_user_interface&oldid=1040746579.
@@ -500,7 +508,40 @@ Some Standard UI widget:
 
 ## Week 5 :five:
 
+### The project
 
+#### Design
+
+Using Adobe XD, I created a general layout for the application with take into account the technical requirements as well as possible design from my GUI experience :
+
+1. One of Data Explorer Screens
+   ![DES](C:\Users\johnd\workspace\SDV602-Journal\src\DES_screen.png)
+2. Menu
+   ![menu](C:\Users\johnd\workspace\SDV602-Journal\src\menu.png)
+3. New data
+   ![image-20210902095429625](C:\Users\johnd\workspace\SDV602-Journal\src\upload.png)
+4. Login
+   ![image-20210902095458411](C:\Users\johnd\workspace\SDV602-Journal\src\login.png)
+5. Sign up
+   ![image-20210902100028309](C:\Users\johnd\workspace\SDV602-Journal\src\signup.png)
+6. Pop up message
+   ![image-20210902100129671](C:\Users\johnd\workspace\SDV602-Journal\src\popup.png)
+
+Those screen gives me a general idea of layout as well as how to structure my code.
+
+#### Implement
+
+While working on the first milestone of the project, I decided to use tkinter library due to its popularity as well as great support and resource available online.
+
+![image-20210902100657989](C:\Users\johnd\workspace\SDV602-Journal\src\login_code.png)
+
+My main focus would be to ensure all the element is present and show up in a correct order while keeping all the functionality as place holder for milestone 2 and 3.
+
+![image-20210902100822948](C:\Users\johnd\workspace\SDV602-Journal\src\functions.png)
+
+The data and design is also a bit unconsitence but as I progress along the project. It will follow format as well as reduce problem.
+
+![DES code](C:\Users\johnd\workspace\SDV602-Journal\src\DES_code.png)
 
 ## Week 6 :six:
 
