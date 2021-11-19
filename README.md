@@ -626,9 +626,9 @@ The code above show with the used of **kwargs, coder can adding more arguments t
 
 - GeeksforGeeks. “*args and **kwargs in Python,” May 30, 2017. https://www.geeksforgeeks.org/args-kwargs-python/.
 
+## Week 7 7️⃣
 
-
-## Week 6
+###
 
 
 
